@@ -1,0 +1,177 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+p{
+  line-height: 25px;
+}
+
+body{
+  font-family:'Lato', sans-serif;
+  background:#EAEDED;
+  line-height: 1.5rem;
+}
+a{
+  text-decoration:none;
+  color:#212F3C;
+}
+h2{
+  margin-top:1rem;
+}
+ul{
+  list-style:none;
+}
+img{
+  width:100%;
+}
+#navbar{
+  background:white;
+  position: sticky;
+  top:0px;
+  z-index:2;
+}
+.container{
+  max-width: 1100px;
+  margin:auto;
+  /* width:100%; */
+  overflow:hidden;
+}
+#navbar .container{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  align-items:center;
+  padding: 7px 11px;
+}
+#navbar .container ul{
+  display:flex;
+}
+#navbar .container ul li a:hover{
+  background:#B3B6B7;
+}
+#navbar .container ul li a.current{
+  background:#797D7F;
+
+}
+#navbar .container ul li a{
+  padding:  10px 13px;
+}
+/* showcase */
+#showcase{
+  background:white;
+  padding:1rem 0rem;
+  background:url('../img/bike99.jpg') no-repeat center center/cover;
+  height:90vh;
+
+}
+#showcase .showcase-container{
+
+  display:grid; 
+  grid-template-columns: 1fr 1fr;
+  /* height:90vh; */
+  align-items: center;
+  justify-content: center;
+  padding:2rem;
+
+}
+#showcase .showcase-content{
+  align-items: center;
+  color:white;
+
+}
+#showcase .showcase-content h2{
+  align-items: center;
+  color:white;
+  margin-bottom:10px;
+
+}
+
+#showcase .showcase-content a{
+  color:black;
+  display:inline-block;
+  background:white;
+  padding:2px 5px;;
+  border:none;
+  margin-top:10px;
+  border-radius:3px;
+}
+
+/* articles */
+#articles .article-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:1rem;
+  margin-top:1rem;
+
+}
+#articles .article-container #white{ 
+  background:white;
+  padding:10px;
+}
+#articles .cards1{
+  display:grid;
+  grid-column: 1 /span 2;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1rem;
+  background:white;
+  padding:0px 10px;  
+}
+/* footer */
+#main-footer{
+  background:#34495E;
+  margin-top:1rem;
+}
+#main-footer .footer-container{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  justify-content: center;
+  padding:2rem;
+  grid-gap: 1rem;
+}
+#main-footer .footer-content #subs{
+  background:#7B7D7D;
+  text-align: center;
+  margin-top:1rem;
+  width:100%;
+  display:inline-block;
+}#main-footer .footer-content .form-group input{
+  width:100%;
+  padding:3px;
+  margin-top:5px;
+}
+#main-footer .footer-content #join{
+  background:#7B7D7D;
+  padding:4px;
+  border-radius:4px;
+}
+#end-footer{
+  text-align: center;
+  padding:10px 0px;
+}
+/* about page */
+#about .side-content{
+  background:#424949;
+  color:white;
+  padding:13px;
+}
+
+#about .side-content a{
+  display:inline-block;
+  background:#7B7D7D;
+  padding:5px 6px;
+  margin-top:1rem;
+
+}
+#about .page-content{
+  display:grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 2rem;
+  margin:2rem;
+}
+#about .about-cards {
+  background:#95A5A6;
+  grid-row:1 / span 3;
+  padding:1rem;
+}
